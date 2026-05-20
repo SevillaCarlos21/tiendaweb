@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Core System v2</title>
+    <!-- Referencia al nuevo nombre de CSS -->
+    <link rel="stylesheet" href="main-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Pantalla de Bienvenida (Carga) -->
+    <section id="splash-screen">
+        <div class="loader-content">
+            <div class="spinner"></div>
+            <h2 id="load-msg">Inicializando entorno...</h2>
+            <div class="bar-container">
+                <div id="dynamic-bar"></div>
+            </div>
+            <p id="counter">0%</p>
+        </div>
+    </section>
+
+    <!-- Interfaz de Usuario (Dashboard) -->
+    <main id="dashboard-view" class="hidden-view">
+        <header class="top-nav">
+            <div class="brand">DATA<span>CORE</span></div>
+            <div class="user-profile">
+                <span>Sesión Activa</span>
+                <div class="status-dot"></div>
+            </div>
+        </header>
+
+        <div class="dashboard-content">
+            <div class="welcome-text">
+                <h1>Panel de Control</h1>
+                <p>Todos los sistemas están operativos y sincronizados.</p>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>Registros</h3>
+                    <div class="value">12,400</div>
+                    <div class="trend">+5.2%</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Rendimiento</h3>
+                    <div class="value">98.2%</div>
+                    <div class="trend positive">Estable</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Procesos</h3>
+                    <div class="value">Activos</div>
+                    <button class="btn-action">Revisar</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Referencia al nuevo nombre de JS -->
+    <script src="engine.js"></script>
+</body>
+</html>
